@@ -4,18 +4,18 @@ import boto3
 import subprocess
 
 # Configuración de credenciales para LocalStack
-aws_access_key_id = "test"
-aws_secret_access_key = "test"
-aws_session_token = "test"
-endpoint_url = "http://localhost:4566"
+#aws_access_key_id = "test"
+#aws_secret_access_key = "test"
+#aws_session_token = "test"
+#endpoint_url = "http://localhost:4566"
 
 # Crear un cliente de S3
 s3 = boto3.client(
-    "s3",
-    aws_access_key_id=aws_access_key_id,
-    aws_secret_access_key=aws_secret_access_key,
-    aws_session_token=aws_session_token,
-    endpoint_url=endpoint_url
+    "s3"
+    #aws_access_key_id=aws_access_key_id,
+    #aws_secret_access_key=aws_secret_access_key,
+    #aws_session_token=aws_session_token,
+    #endpoint_url=endpoint_url
 )
 
 # Nombre del bucket y la carpeta en S3
